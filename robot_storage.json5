@@ -1,20 +1,19 @@
 {
-  plugins: {
-    rest: {                        // activate and configure the REST plugin
-      http_port: 9500              // with HTTP server listening on port 9500
+  "plugins": {
+    "rest": {
+      "http_port": 9500
     },
-    storage_manager: {             // activate and configure the storage_manager plugin
-      volumes: {
-        // configuration of a "fs" volume (the "zenoh_backend_fs" backend library will be loaded at startup)
-        fs: {},
+    "storage_manager": {
+      "volumes": {
+        "fs": {} // <--- 쉼표 제거
       },
-      storages: {
-        robot: {                   // configure a "robot" storage
-          key_expr: "robot/**",    // which subscribes and replies to queries on robot/**
-          strip_prefix: "robot",
-          volume: {
-            id: "fs",
-            dir: "robot"
+      "storages": {
+        "robot": {
+          "key_expr": "robot/**",
+          "strip_prefix": "robot",
+          "volume": {
+            "id": "fs",
+            "dir": "robot"
           }
         }
       }
