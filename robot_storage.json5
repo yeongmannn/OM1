@@ -5,7 +5,7 @@
     },
     "storage_manager": {
       "volumes": {
-        "fs": {} // <--- 쉼표 제거
+        "fs": {} // <--- Remove Commas
       },
       "storages": {
         "robot": {
