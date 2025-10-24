@@ -17,7 +17,7 @@
 
 ## Getting Started - Hello World
 
-To get started with OM1, let's run the Spot agent. Spot uses your webcam to capture and label objects. These text captions are then sent to `OpenAI 4o`, which returns `movement`, `speech` and `face` action commands. These commands are displayed on WebSim along with basic timing and other debugging information.
+To get started with OM1, let's run the Spot agent. Spot uses your webcam to capture and label objects. These text captions are then sent to `OpenAI GPT-4o`, which returns `movement`, `speech` and `face` action commands. These commands are displayed on WebSim along with basic timing and other debugging information.// Change model name to formal name
 
 ### Package Management and VENV
 
@@ -29,7 +29,7 @@ You will need the [`uv` package manager](https://docs.astral.sh/uv/getting-start
 git clone https://github.com/openmind/OM1.git
 cd OM1
 git submodule update --init
-uv venv
+uv venv. // Missing command factor
 ```
 
 ### Install Dependencies
@@ -47,7 +47,7 @@ sudo apt-get install portaudio19-dev python-dev ffmpeg
 
 ### Obtain an OpenMind API Key
 
-Obtain your API Key at [OpenMind Portal](https://portal.openmind.org/). Copy it to `config/spot.json5`, replacing the `openmind_free` placeholder. Or, `cp env.example .env` and add your key to the `.env`. 
+Obtain your API Key at [OpenMind Portal](https://portal.openmind.org/). Copy it to `config/spot.json5`, replacing the `openmind_free` placeholder. Or, `cp env.example .env` and add your key to the `.env`.
 
 ### Launching OM1
 
